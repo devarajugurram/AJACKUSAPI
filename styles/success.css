@@ -1,0 +1,49 @@
+/* importing css styles and varibales and fonts from index.css */
+@import url('./index.css');
+body {
+    font-family: var(--button-text-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--body-background);
+    color: var(--table-body-color);
+  }
+
+  .success-container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid var(--add-button-color);
+    border-radius: 10px;
+    background-color: var(--white-background-color);
+    box-shadow: 0 4px 6px var(--bakcground-shadow);
+  }
+
+  .success-container h1 {
+    color: var(--add-button-color);
+    margin-bottom: 10px;
+    font-weight: 200;
+  }
+
+  .success-container p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: var(--delete-button);
+  }
+
+  .success-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: var(--add-button-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .success-container button:hover {
+    background-color: var(--view-button-hover);
+  }

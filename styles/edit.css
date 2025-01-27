@@ -1,0 +1,89 @@
+/* importing css styles and varibales and fonts from index.css */
+@import url('../styles//index.css');
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--body-background);
+    color: var(--white-color);
+}
+
+h1 {
+    text-align: center;
+    color: var(--add-button-color);
+    margin: 20px 0;
+    font-family: var(--button-text-font);
+    font-weight: 200;
+}
+
+form {
+    margin: 10px;
+    max-width: 630px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: var(--white-background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    font-family: var(--cell-text-font-type);
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    color: var(--body-background);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: var(--input-focus-color);
+    outline: none;
+    box-shadow: 0 0 5px var(--input-focus-color);
+}
+
+h3 {
+    margin-top: 20px;
+    color: var(--add-button-color);
+}
+
+h4 {
+    margin-top: 10px;
+    color: var(--hover-button-color);
+}
+
+button {
+    background-color: var(--add-button-color);
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--delete-button);
+}
+
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+
+    input,
+    button {
+        font-size: 14px;
+    }
+}

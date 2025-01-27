@@ -1,0 +1,195 @@
+/* importing css styles and varibales and fonts from index.css */
+@import url('../styles/index.css');
+
+body {
+    font-family: 'Lexend Giga', sans-serif;
+    background-color: var(--body-background);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.crud-container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--white-background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--bakcground-shadow);
+    box-sizing: border-box;
+    margin: 10px;
+    overflow: hidden; 
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--table-body-color);
+    background-color: var(--white-color);
+    color: var(--body-background);
+    transition: border-color 0.3s ease;
+    word-wrap: break-word; 
+    box-sizing: border-box; 
+}
+
+.crud-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--body-background);
+    margin-bottom: 8px;
+}
+
+
+.address-container {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.form-input:focus {
+    border-color: var(--add-button-color);
+    outline: none;
+}
+
+.crud-button {
+    padding: 12px 20px;
+    background-color: var(--add-button-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: var(--button-text-font);
+}
+
+.crud-button:hover {
+    background-color: var(--view-button-hover);
+}
+.form-group-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert {
+    color: var(--delete-button);
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .crud-container {
+        padding: 15px;
+    }
+    
+    .crud-title {
+        font-size: 28px;
+    }
+    
+    .form-input {
+        padding: 10px;
+    }
+    
+    .crud-button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .crud-container {
+        padding: 20px;
+    }
+    
+    .crud-title {
+        font-size: 32px;
+    }
+    
+    .form-input {
+        padding: 12px;
+    }
+    
+    .crud-button {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .crud-container {
+        padding: 30px;
+    }
+    
+    .crud-title {
+        font-size: 36px;
+    }
+    
+    .form-input {
+        padding: 14px;
+    }
+    
+    .crud-button {
+        font-size: 18px;
+        padding: 14px 24px;
+    }
+}
+
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: var(--table-background-color);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-family: var(--cell-text-font-type);
+    color: var(--body-background);
+}
+
+tr:nth-child(even) {
+    background-color: var(--table-body-color);
+}
+
+th {
+    background-color: var(--add-button-color);
+    color: var(--white-color);
+}
+
+.delete-button {
+    background-color: var(--delete-button);
+    color: var(--white-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: var(--button-text-font);
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: var(--delete-button-o-hover);
+}

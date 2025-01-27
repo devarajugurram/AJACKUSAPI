@@ -1,0 +1,87 @@
+/* importing css styles and varibales and fonts from index.css */
+@import url('./index.css');
+
+body {
+    font-family: var(--button-text-font);
+    background-color: var(--body-background);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.error-container {
+    background-color: var(--white-background-color);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--bakcground-shadow);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    font-family: var(--cell-text-font-type);
+    font-weight: 200;
+}
+
+.error-title {
+    font-size: 28px;
+    color: var(--delete-button); 
+    margin-bottom: 20px;
+    
+}
+
+.error-message {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.error-button {
+    padding: 12px 30px;
+    background-color: var(--add-button-color);
+    color: var(--white-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.error-button:hover {
+    background-color: var(--view-button-hover);
+}
+
+.error-button:active {
+    background-color: var(--backgroun-o-add-button-color);
+}
+
+@media (max-width: 768px) {
+    .error-title {
+        font-size: 24px;
+    }
+
+    .error-message {
+        font-size: 14px;
+    }
+
+    .error-button {
+        padding: 10px 25px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .error-title {
+        font-size: 20px;
+    }
+
+    .error-message {
+        font-size: 12px;
+    }
+
+    .error-button {
+        padding: 10px 20px; 
+    }
+    .error-container {
+        padding: 30px;
+    }
+}

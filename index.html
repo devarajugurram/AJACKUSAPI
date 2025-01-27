@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- it is a main page contains details fetch from the api in the form of table -->
+     <!-- can try more options create,update,read,delete (CRUD) operations -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD - Operations API</title>
+    <link rel="stylesheet" href="./styles/index.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap
+    &family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900" rel="stylesheet">
+</head>
+<!-- // method used to load data in lazy format -->
+<body loading="lazy">
+    <div class="container">
+        <div class="main-block">
+            <!-- header  -->
+            <h1 style="font-family: Lexend Giga,serif;">CRUD - Operations</h1>
+            <div class="add-user">
+                <button id="add-user-button" style="font-family: Kanit, serif;">ADD</button>
+            </div>
+            <div class="fetch-details">
+                <!-- details table  -->
+                <div id="table">
+                    <table id="data-table">
+                        <!-- attributes of the table initalized here  -->
+                        <thead>
+                            <tr style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 200;">
+                                <th id="id">Id</th>
+                                <th id="name">Name</th>
+                                <th id="email">Email</th>
+                                <th id="address">Address</th>
+                                <th> </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- data dynamically appended here  -->
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./index.js" rel="text/javascript"></script>
+</html>

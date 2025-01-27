@@ -1,0 +1,156 @@
+/* importing css styles and varibales and fonts from index.css */
+@import url('../styles//index.css');
+:root {
+    --border-bottom-color: #e0e0e0;
+    --details-color: #555555;
+    --data-show-color: #f9f9f9;
+    --button-text-font: 'Kanit', serif;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--white-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.details-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--white-color);
+    box-shadow: 0 4px 8px var(--background-shadow);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.details-header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--border-bottom-color);
+    padding-bottom: 10px;
+}
+
+.details-header h2 {
+    font-size: 24px;
+    margin: 0;
+    color: var(--body-background);
+    font-family: var(--button-text-font);
+    font-weight: 300;
+}
+
+.details-content {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: var(--details-color);
+    line-height: 1.8;
+    min-height: 50px;
+    word-wrap: break-word;
+}
+
+.details-content p {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--data-show-color);
+    transition: background-color 0.3s ease;
+}
+
+.details-content p:hover {
+    background-color: #ecf0f1;
+}
+
+.details-content h3, .details-content h4 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #2980b9;
+}
+
+.details-content strong {
+    color: var(--body-background);
+    font-weight: bold;
+}
+
+.details-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 120px;
+    box-sizing: border-box;
+}
+
+button#editButton {
+    background-color: var(--add-button-color);
+    color: var(--white-color);
+}
+
+button#editButton:hover {
+    background-color: var(--view-button-hover);
+}
+
+button#deleteButton {
+    background-color: var(--delete-button);
+    color: var(--white-color);
+}
+
+button#deleteButton:hover {
+    background-color: var(--delete-button-o-hover);
+}
+.error-message {
+    color: #721c24;
+    padding: 15px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.error-message p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .details-header h2 {
+        font-size: 20px;
+    }
+
+    button {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .details-container {
+        padding: 15px;
+    }
+
+    .details-header h2 {
+        font-size: 18px;
+    }
+
+    .details-buttons {
+        flex-direction: column;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}
