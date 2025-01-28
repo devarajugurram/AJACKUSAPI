@@ -189,7 +189,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
                         if (detailsContent) {
                             detailsContent.innerHTML = `
-                    <p><strong>User ID:</strong> ${data.id}</p>
                     <p><strong>Name:</strong> ${data.name}</p>
                     <p><strong>Username:</strong> ${data.username}</p>
                     <p><strong>Email:</strong> ${data.email}</p>
