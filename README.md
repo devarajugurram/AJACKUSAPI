@@ -89,7 +89,6 @@ You can access the users' data at the following URL:
       "bs": "harness real-time e-markets"
     }
   },
-  ...
 ]
 ```
 ## CRUD Operations Explained
